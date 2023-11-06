@@ -290,7 +290,7 @@ class Lists extends React.Component {
             {this.props.data.map((mv) => (
               <div onClick={() => this.handleCardClick(mv)}>
                 <div className="card">
-                  <img alt="description of image no1" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${mv.poster_path}`} />
+                  <img alt="" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${mv.poster_path}`} />
                   <div class="info">
                     <span class='dot'>{mv.original_language}</span>
                     <h2>{mv.title}</h2>
@@ -326,7 +326,7 @@ class Lists extends React.Component {
       return (
         <p id="outputSelected">
           <span class='back' onClick={() => this.handleBackClick()}> back</span>
-          <img id="pic" alt="description of image no2" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${this.state.item.poster_path}`} />
+          <img id="pic" alt="" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${this.state.item.poster_path}`} />
           <div class="infoSelected">
             <h1 class="topicSelected">{this.state.item.title}</h1>
             <h1 class='detailgenSelected'>
@@ -346,7 +346,7 @@ class Lists extends React.Component {
               <p className="ovSelected">{this.state.item.overview}</p>
             </div>
           </div>
-          <img id="picBD" alt="description of image no3" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${this.state.item.backdrop_path}`} />
+          <img id="picBD" alt="" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${this.state.item.backdrop_path}`} />
         </p>
       );
     }
